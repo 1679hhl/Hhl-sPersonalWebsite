@@ -9,7 +9,7 @@ import { statsBlockSchema } from '@/components/blocks/stats';
 import { ctaBlockSchema } from '@/components/blocks/call-to-action';
 
 const Page: Collection = {
-  label: 'Pages',
+  label: '页面',
   name: 'page',
   path: 'content/pages',
   format: 'mdx',
@@ -27,7 +27,7 @@ const Page: Collection = {
       type: 'object',
       list: true,
       name: 'blocks',
-      label: 'Sections',
+      label: '版块',
       ui: {
         visualSelector: true,
       },

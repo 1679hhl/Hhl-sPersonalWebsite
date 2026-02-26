@@ -1,21 +1,19 @@
 ---
-title: Learning about Mermaid
+title: 学习 Mermaid
 heroImg: /uploads/posts/learning-about-mermaid.webp
 excerpt: >
-  Join me on my journey as I explore the powerful features of Mermaid for
-  creating diagrams and visualizations in markdown. Perfect for enhancing your
-  blog posts and documentation with clear, interactive graphics.
+  加入我的旅程，探索 Mermaid 的强大功能，用于在 Markdown 中创建图表和可视化。非常适合用清晰、交互式的图形增强您的博客文章和文档。
 author: content/authors/pedro.md
 date: 2025-01-13T07:00:00.000Z
 tags:
   - tag: content/tags/mermaid.mdx
 ---
 
-TinaCMS is designed to empower content creators with an intuitive and flexible editing experience, and our markdown support is no exception. Whether you're managing a simple blog or a complex documentation site, TinaCMS seamlessly integrates markdown, combining the power of structured content with the ease of real-time editing. From headings and links to images and custom syntax, TinaCMS ensures your markdown files are easy to manage and customize while maintaining complete control over your content.
+TinaCMS 旨在通过直观灵活的编辑体验赋予内容创作者权力，我们的 Markdown 支持也不例外。无论您是管理简单的博客还是复杂的文档网站，TinaCMS 都能无缝集成 Markdown，结合了结构化内容的强大功能和实时编辑的便捷性。从标题和链接到图像和自定义语法，TinaCMS 确保您的 Markdown 文件易于管理和自定义，同时保持对内容的完全控制。
 
-## Flowcharts
+## 流程图 (Flowcharts)
 
-Use a flowchart to visualize processes, decision trees, or workflows. It’s ideal for simplifying complex systems or explaining logic visually.
+使用流程图来可视化过程、决策树或工作流程。它非常适合简化复杂系统或直观地解释逻辑。
 
 ```mermaid
 flowchart TD
@@ -34,9 +32,9 @@ flowchart TD
     K --> L[Become Awesome Anyway]
 ```
 
-## Sequence Diagram
+## 序列图 (Sequence Diagram)
 
-Use a sequence diagram to illustrate interactions between components or systems over time, particularly for APIs, workflows, or system interactions.
+使用序列图来说明组件或系统随时间推移的交互，特别是对于 API、工作流程或系统交互。
 
 ```mermaid
 sequenceDiagram
@@ -50,9 +48,9 @@ sequenceDiagram
     Frodo-->>Ring: Throws it into Mount Doom
 ```
 
-## Class Diagram
+## 类图 (Class Diagram)
 
-Use a class diagram for object-oriented system design, showing the structure of classes, attributes, and their relationships.
+使用类图进行面向对象的系统设计，显示类、属性及其关系的结构。
 
 ```mermaid
 classDiagram
@@ -69,9 +67,9 @@ classDiagram
     Jedi <|-- Sith
 ```
 
-## State Diagram
+## 状态图 (State Diagram)
 
-Use a state diagram to represent different states of a system or object and transitions between those states.
+使用状态图来表示系统或对象的不同状态以及这些状态之间的转换。
 
 ```mermaid
 stateDiagram-v2
@@ -83,9 +81,9 @@ stateDiagram-v2
     Mordor --> [*]: Mission complete
 ```
 
-## Entity Relationship Diagram
+## 实体关系图 (Entity Relationship Diagram)
 
-Use an ER diagram to model database structures, showing entities, attributes, and relationships.
+使用 ER 图来建模数据库结构，显示实体、属性和关系。
 
 ```mermaid
 erDiagram
@@ -105,9 +103,9 @@ erDiagram
     }
 ```
 
-## User Journey
+## 用户旅程 (User Journey)
 
-Use a user journey diagram to track user interactions with your product or service and identify pain points or areas for improvement.
+使用用户旅程图来跟踪用户与您的产品或服务的交互，并识别痛点或改进领域。
 
 ```mermaid
 journey
@@ -123,9 +121,9 @@ journey
       Save the Galaxy: 5: Luke
 ```
 
-## Gantt Chart
+## 甘特图 (Gantt Chart)
 
-Use a Gantt chart to visualize timelines and project schedules, tracking progress and dependencies.
+使用甘特图来可视化时间表和项目进度，跟踪进度和依赖关系。
 
 ```mermaid
 gantt
@@ -139,9 +137,9 @@ gantt
     Install Laser Cannon :b2, 2025-04-01, 2025-06-30
 ```
 
-## Pie Chart
+## 饼图 (Pie Chart)
 
-Use a pie chart to represent data proportions visually, such as resource allocation or survey results.
+使用饼图直观地表示数据比例，例如资源分配或调查结果。
 
 ```mermaid
 pie
@@ -153,9 +151,9 @@ pie
     "Black Widow" : 10
 ```
 
-## Quadrant Chart
+## 象限图 (Quadrant Chart)
 
-Use a quadrant chart to prioritize tasks or visualize elements across two dimensions.
+使用象限图来确定任务的优先级或跨两个维度可视化元素。
 
 ```mermaid
 quadrantChart
@@ -174,9 +172,9 @@ quadrantChart
     Campaign F: [0.35, 0.78]
 ```
 
-## Requirement Diagram
+## 需求图 (Requirement Diagram)
 
-Use a requirement diagram to track project requirements and their relationships.
+使用需求图来跟踪项目需求及其关系。
 
 ```mermaid
     requirementDiagram
@@ -195,9 +193,9 @@ Use a requirement diagram to track project requirements and their relationships.
     test_entity - satisfies -> test_req
 ```
 
-## Gitgraph (Git) Diagram
+## Gitgraph (Git) 图表
 
-Use a Gitgraph diagram to visualize Git workflows and branching strategies.
+使用 Gitgraph 图表来可视化 Git 工作流程和分支策略。
 
 ```mermaid
 gitGraph
@@ -213,9 +211,9 @@ gitGraph
     merge hotfix
 ```
 
-## C4 Diagram
+## C4 图 (C4 Diagram)
 
-Use a C4 diagram for software architecture, showing system contexts, containers, components, and code.
+使用 C4 图进行软件架构设计，显示系统上下文、容器、组件和代码。
 
 ```mermaid
     C4Context
@@ -262,9 +260,9 @@ Use a C4 diagram for software architecture, showing system contexts, containers,
       UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
 ```
 
-## Mindmaps
+## 思维导图 (Mindmaps)
 
-Use a mindmap to brainstorm ideas or visually organize information hierarchically.
+使用思维导图来集思广益或分层组织信息。
 
 ```mermaid
 mindmap
@@ -286,9 +284,9 @@ mindmap
       Mermaid
 ```
 
-## Timeline
+## 时间轴 (Timeline)
 
-Use a timeline to show events chronologically, such as milestones or historical data.
+使用时间轴按时间顺序显示事件，例如里程碑或历史数据。
 
 ```mermaid
 timeline
@@ -300,9 +298,9 @@ timeline
     1998 : Battle of Hogwarts
 ```
 
-## Sankey Diagram
+## 桑基图 (Sankey Diagram)
 
-Use a Sankey diagram to show the flow of resources, energy, or data between stages.
+使用桑基图显示阶段之间的资源、能源或数据流。
 
 ```mermaid
 ---
@@ -382,9 +380,9 @@ Wave,Electricity grid,19.013
 Wind,Electricity grid,289.366
 ```
 
-## XY Chart
+## XY 图表 (XY Chart)
 
-Use an XY chart to compare data points across two dimensions, such as performance vs. cost.
+使用 XY 图表来比较两个维度的数据点，例如性能与成本。
 
 ```mermaid
 xychart-beta
@@ -396,10 +394,10 @@ xychart-beta
 
 ```
 
-## Packet Diagram
+## 数据包图 (Packet Diagram)
 
-When to use:
-Use a packet diagram to describe network communications and data flows.
+何时使用：
+使用数据包图来描述网络通信和数据流。
 
 ```mermaid
 packet-beta
@@ -422,9 +420,9 @@ packet-beta
 192-255: "Data (variable length)"
 ```
 
-## Kanban
+## 看板 (Kanban)
 
-Use a Kanban board to visualize work items and their statuses in workflows.
+使用看板来可视化工作流程中的工作项及其状态。
 
 ```mermaid
 kanban
@@ -440,9 +438,9 @@ kanban
     id66[last item]@{ priority: 'Very Low', assigned: 'knsv' }
 ```
 
-## Architecture Diagram
+## 架构图 (Architecture Diagram)
 
-Use an architecture diagram to represent high-level system components and their interactions.
+使用架构图来表示高级系统组件及其交互。
 
 ```mermaid
 flowchart LR

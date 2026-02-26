@@ -29,7 +29,7 @@ export const Stats = ({ data }: { data: PageBlocksStats }) => {
 
 export const statsBlockSchema: Template = {
     name: "stats",
-    label: "Stats",
+    label: "统计",
     ui: {
         previewSrc: "/blocks/stats.png",
         defaultItem: {
@@ -55,17 +55,17 @@ export const statsBlockSchema: Template = {
         sectionBlockSchemaField as any,
         {
             type: "string",
-            label: "Title",
+            label: "标题",
             name: "title",
         },
         {
             type: "string",
-            label: "Description",
+            label: "描述",
             name: "description",
         },
         {
             type: "object",
-            label: "Stats",
+            label: "统计数据",
             name: "stats",
             list: true,
             ui: {
@@ -82,12 +82,12 @@ export const statsBlockSchema: Template = {
             fields: [
                 {
                     type: "string",
-                    label: "Stat",
+                    label: "数值",
                     name: "stat",
                 },
                 {
                     type: "string",
-                    label: "Type",
+                    label: "类型",
                     name: "type",
                 },
             ],

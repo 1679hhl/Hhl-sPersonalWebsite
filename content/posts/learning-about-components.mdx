@@ -1,17 +1,15 @@
 ---
-title: Learning about components
+title: 了解组件
 heroImg: /uploads/posts/learning-about-components.webp
 excerpt: >
-  Markdown is simple, but sometimes you need more than just text. Learn how to
-  enhance your content with dynamic components like interactive elements, custom
-  queries, and styled callouts.
+  Markdown 很简单，但有时你需要的不仅仅是文本。了解如何通过动态组件（如交互式元素、自定义查询和样式化标注）增强你的内容。
 author: content/authors/napoleon.md
 date: 2021-07-15T07:00:00.000Z
 ---
 
-## Markdown, But Better
+## Markdown，但更好
 
-Hello, the current date is <DateTime format="local" />. Markdown is great for writing content, but what if you need something more interactive? What if you want to pull in dynamic data, display formatted callouts, or collect user input? That's where components come in.
+你好，当前日期是 <DateTime format="local" />。Markdown 非常适合编写内容，但如果你需要更具交互性的东西怎么办？如果你想提取动态数据、显示格式化的标注或收集用户输入怎么办？这就是组件的用武之地。
 
 ---
 
@@ -23,40 +21,39 @@ query MyQuery($relativePath: String!) {
 }
 ```
 
-> With components, your Markdown content isn't just static text—it becomes a dynamic experience. You can fetch data, format content beautifully, and even build interactive elements directly inside your posts.
+> 通过组件，你的 Markdown 内容不仅仅是静态文本——它变成了一种动态体验。你可以获取数据、精美地格式化内容，甚至直接在文章中构建交互式元素。
 
-![Enhancing Markdown with Components](/uploads/posts/learning-about-components.webp)
+![使用组件增强 Markdown](/uploads/posts/learning-about-components.webp)
 
-Let's break down a few examples of how components can improve your Markdown-based content.
+让我们分解几个关于组件如何改善基于 Markdown 的内容的示例。
 
 <NewsletterSignup
-  placeholder="Enter your email"
-  buttonText="Notify Me"
+  placeholder="输入您的邮箱"
+  buttonText="通知我"
   disclaimer={<>
-    We care about the protection of your data. Read our [Privacy Policy](http://example.com).
+    我们关心您的数据保护。阅读我们的[隐私政策](http://example.com)。
   </>}
 >
-  ## Stay Updated!
+  ## 保持更新！
 
-Want to learn more about using components? Sign up to get the latest tips and tricks straight to your inbox.
+  想了解更多关于使用组件的信息吗？注册以直接在您的收件箱中获取最新的提示和技巧。
 
 </NewsletterSignup>
 
-## Why Use Components in Markdown?
+## 为什么在 Markdown 中使用组件？
 
-- **Keep Content Dynamic** - Pull in real-time data instead of static text.
-- **Improve Readability** - Use structured callouts, buttons, and forms.
-- **Enhance User Interaction** - Let users take action directly in the content.
+- **保持内容动态** - 提取实时数据而不是静态文本。
+- **提高可读性** - 使用结构化标注、按钮和表单。
+- **增强用户交互** - 让用户直接在内容中采取行动。
 
-## More Ways to Use Components
+## 更多使用组件的方式
 
-1. **Embed GraphQL Queries** - Fetch and display content dynamically.
-2. **Use Styled Callouts** - Highlight key points with visually distinct elements.
-3. **Create Interactive Forms** - Let users sign up, submit data, or engage with your content.
+1. **嵌入 GraphQL 查询** - 动态获取和显示内容。
+2. **使用样式化标注** - 使用视觉上独特的元素突出显示关键点。
+3. **创建交互式表单** - 让用户注册、提交数据或参与您的内容。
 
 ---
 
 <BlockQuote authorName="Uncle Rico AI">
-  Back in '82, I could code Markdown blindfolded. If I had these components back
-  then, I'd be running the biggest blog on the internet, no doubt.
+  早在 82 年，我就能蒙着眼睛写 Markdown。如果那时我有这些组件，我毫无疑问会运营互联网上最大的博客。
 </BlockQuote>

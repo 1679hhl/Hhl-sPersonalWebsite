@@ -1,6 +1,77 @@
 ---
 blocks:
-  - body: "# What is this?\n\nThis is a [TinaCMS](https://tina.io)-enabled Next.js app, so you can edit your content on a live page. In this project the Tina file-based CMS is used via GraphQL: it's powered by a schema that *you* define. It not only serves content from Markdown files in your repository, but it also generates TinaCMS forms for you automatically ✨.\n\n## New to TinaCMS?\n\nTinaCMS is feature-rich, and leaves a lot of power up to the user on how it's configured.\n\nThere can be a learning curve as you get to grips with how it all fits together.\n\nThe tutorials in our docs will guide you through the basics, to the more advanced ways to use the tool.\n\nCheck out the [Learning Guide](https://tina.io/docs/beginner-tutorials/tutorial-overview) it covers all you need to get up and running with TinaCMS.\n\n## Requirements\n\n* Git\n* [Node.js Active LTS](https://nodejs.org/en/about/releases/)\n* NPM, Yarn, pnpm, or bun\n\n## Install\n\nInstall the project's dependencies:\n\n<scriptCopyBlock\n  codeLanguage=\"bash\"\n  lightTheme=\"catppuccin-latte\"\n  darkTheme=\"catppuccin-mocha\"\n  commandMap=\"npm|npm install\n  pnpm|pnpm install\n  yarn|yarn install\n  bun|bun install\"\n/>\n\n## Run the project locally\n\nTo run the local development server:\n\n<scriptCopyBlock\n  codeLanguage=\"bash\"\n  lightTheme=\"catppuccin-latte\"\n  darkTheme=\"catppuccin-mocha\"\n  commandMap=\"npm|npm run dev\n  pnpm|pnpm run dev\n  yarn|yarn dev\n  bun|bun run dev\"\n/>\n\nThis command starts the GraphQL server and the Next.js application in development mode. It also regenerates your schema types for TypeScript and GraphQL so changes to your `/tina/config.ts` are reflected immediately.\n\nOne of the most interesting aspects of the TinaCloud Content API is that it doesn't actually require anything from the cloud to work locally. Since TinaCMS is by default a Git-backed CMS, everything can be run from your local filesystem via the CLI. \U0001F60E\n\nThis is ideal for development workflows and the API is identical to the one used in TinaCloud, so once you're ready to deploy your application you won't face any challenges there.\n\nOpen [`http://localhost:3000`](http://localhost:3000) in your browser to see your file-based content being loaded from the GraphQL API.\n\nWant to learn more? Go through the [Learning Guide](https://tina.io/docs/beginner-tutorials/tutorial-overview) to understand how to customise your TinaCMS experience.\n\n## Connect to Tina Cloud\n\nWhile the fully-local development workflow is the recommended way for developers to work,\nyou'll obviously want other editors and collaborators to be able to make changes on a hosted website with authentication.\n\nCheck out the docs on how to connect to our hosted backend - [Going to Production with TinaCloud](https://tina.io/docs/tina-cloud/overview)\n\n## Deploy\n\nSites using TinaCMS and TinaCloud can be deployed to lots of hosting providers.\n\nWe have documented some of the popular ones:\n\n* [Vercel](https://tina.io/docs/tina-cloud/deployment-options/vercel)\n* [Netlify](https://tina.io/docs/tina-cloud/deployment-options/netlify)\n* [GitHub Pages](https://tina.io/docs/tina-cloud/deployment-options/github-pages)\n* [Alibaba Cloud](https://tina.io/docs/tina-cloud/deployment-options/alibaba-cloud)\n\nIf your favourite isn't listed here, it doesn't mean that it isn't supported - we just don't have documentation for it yet.\n\n***\n\n## Getting Help\n\nYou might face issues, want to provide feedback or get help with any challenges you may have:\n\n* Read the [TinaCloud documentation](https://tina.io/docs/tina-cloud/).\n* [Join our Discord](https://discord.gg/zumN63Ybpf).\n* Visit the [community forum](https://community.tinacms.org/) to ask questions.\n* Reach out to us on Twitter at [@TinaCMS](https://x.com/tinacms).\n* [Email us](mailto\\:support@tina.io) to schedule a call with our team and share more about your context and what you're trying to achieve.\n\n## LICENSE\n\nLicensed under the [Apache 2.0 license](./LICENSE).\n"
+  - body: >
+      # 这是一个什么项目？
+
+
+      这是一个启用了 [TinaCMS](https://tina.io) 的 Next.js 应用程序，因此您可以直接在页面上编辑内容。在这个项目中，Tina 基于文件的 CMS 通过 GraphQL 使用：它由 *您* 定义的模式驱动。它不仅从存储库中的 Markdown 文件提供内容，还会自动为您生成 TinaCMS 表单 ✨。
+
+
+      ## TinaCMS 新手？
+
+
+      TinaCMS 功能丰富，在配置方式上给用户留出了很大的空间。
+
+
+      在掌握它是如何协同工作时，可能需要一些学习过程。
+
+
+      我们文档中的教程将引导您了解基础知识，以及使用该工具的更高级方法。
+
+
+      查看 [学习指南](https://tina.io/docs/beginner-tutorials/tutorial-overview)，它涵盖了您开始使用 TinaCMS 所需的一切。
+
+
+      ## 要求
+
+
+      * Git
+
+      * [Node.js Active LTS](https://nodejs.org/en/about/releases/)
+
+      * NPM, Yarn, pnpm, 或 bun
+
+
+      ## 安装
+
+
+      安装项目的依赖项：
+
+
+      <scriptCopyBlock
+        codeLanguage="bash"
+        lightTheme="catppuccin-latte"
+        darkTheme="catppuccin-mocha"
+        commandMap="npm|npm install
+        pnpm|pnpm install
+        yarn|yarn install
+        bun|bun install"
+      />
+
+
+      ## 在本地运行项目
+
+
+      要运行本地开发服务器：
+
+
+      <scriptCopyBlock
+        codeLanguage="bash"
+        lightTheme="catppuccin-latte"
+        darkTheme="catppuccin-mocha"
+        commandMap="npm|npm run dev
+        pnpm|pnpm run dev
+        yarn|yarn dev
+        bun|bun run dev"
+      />
+
+
+      此命令启动 GraphQL 服务器和 Next.js 应用程序的开发模式。它还会为 TypeScript 和 GraphQL 重新生成您的模式类型，因此对 `/tina/config.ts` 的更改会立即反映出来。
+
+
+      TinaCloud 内容 API 最有趣的方面之一是，它实际上不需要云端的任何东西即可在本地工作。由于 TinaCMS 默认是基于 Git 的 CMS，因此所有内容都可以通过 CLI 从本地文件系统运行。 😎
+
+
+      这是开发的理想选择，因为您可以更改内容和代码，并在提交之前查看它们的工作情况。
     _template: content
 ---
-

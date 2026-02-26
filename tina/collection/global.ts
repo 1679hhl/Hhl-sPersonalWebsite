@@ -4,7 +4,7 @@ import { iconSchema } from "../fields/icon";
 import { icon } from "mermaid/dist/rendering-util/rendering-elements/shapes/icon.js";
 
 const Global: Collection = {
-  label: "Global",
+  label: "全局设置",
   name: "global",
   path: "content/global",
   format: "json",
@@ -14,27 +14,27 @@ const Global: Collection = {
   fields: [
     {
       type: "object",
-      label: "Header",
+      label: "页眉",
       name: "header",
       fields: [
         iconSchema as any,
         {
           type: "string",
-          label: "Name",
+          label: "名称",
           name: "name",
         },
         {
           type: "string",
-          label: "Color",
+          label: "颜色",
           name: "color",
           options: [
-            { label: "Default", value: "default" },
-            { label: "Primary", value: "primary" },
+            { label: "默认", value: "default" },
+            { label: "主色", value: "primary" },
           ],
         },
         {
           type: "object",
-          label: "Nav Links",
+          label: "导航链接",
           name: "nav",
           list: true,
           ui: {
@@ -43,18 +43,18 @@ const Global: Collection = {
             },
             defaultItem: {
               href: "home",
-              label: "Home",
+              label: "首页",
             },
           },
           fields: [
             {
               type: "string",
-              label: "Link",
+              label: "链接",
               name: "href",
             },
             {
               type: "string",
-              label: "Label",
+              label: "标签",
               name: "label",
             },
           ],
@@ -63,12 +63,12 @@ const Global: Collection = {
     },
     {
       type: "object",
-      label: "Footer",
+      label: "页脚",
       name: "footer",
       fields: [
         {
           type: "object",
-          label: "Social Links",
+          label: "社交链接",
           name: "social",
           list: true,
           ui: {
@@ -80,7 +80,7 @@ const Global: Collection = {
             iconSchema as any,
             {
               type: "string",
-              label: "Url",
+              label: "链接",
               name: "url",
             },
           ],
@@ -89,13 +89,13 @@ const Global: Collection = {
     },
     {
       type: "object",
-      label: "Theme",
+      label: "主题",
       name: "theme",
       // @ts-ignore
       fields: [
         {
           type: "string",
-          label: "Primary Color",
+          label: "主色",
           name: "color",
           ui: {
             component: ColorPickerInput,
@@ -104,7 +104,7 @@ const Global: Collection = {
         {
           type: "string",
           name: "font",
-          label: "Font Family",
+          label: "字体",
           options: [
             {
               label: "System Sans",
@@ -123,18 +123,18 @@ const Global: Collection = {
         {
           type: "string",
           name: "darkMode",
-          label: "Dark Mode",
+          label: "深色模式",
           options: [
             {
-              label: "System",
+              label: "跟随系统",
               value: "system",
             },
             {
-              label: "Light",
+              label: "浅色",
               value: "light",
             },
             {
-              label: "Dark",
+              label: "深色",
               value: "dark",
             },
           ],

@@ -50,7 +50,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: PageBlocksTestimonialTe
 
 export const testimonialBlockSchema: Template = {
   name: "testimonial",
-  label: "Testimonial",
+  label: "感言",
   ui: {
     previewSrc: "/blocks/testimonial.png",
     defaultItem: {
@@ -67,12 +67,12 @@ export const testimonialBlockSchema: Template = {
     sectionBlockSchemaField as any,
     {
       type: "string",
-      label: "Title",
+      label: "标题",
       name: "title",
     },
     {
       type: "string",
-      label: "Description",
+      label: "描述",
       name: "description",
       ui: {
         component: "textarea",
@@ -81,7 +81,7 @@ export const testimonialBlockSchema: Template = {
     {
       type: "object",
       list: true,
-      label: "Testimonials",
+      label: "感言列表",
       name: "testimonials",
       ui: {
         defaultItem: {
@@ -100,22 +100,22 @@ export const testimonialBlockSchema: Template = {
           ui: {
             component: "textarea",
           },
-          label: "Quote",
+          label: "引语",
           name: "quote",
         },
         {
           type: "string",
-          label: "Author",
+          label: "作者",
           name: "author",
         },
         {
           type: "string",
-          label: "Role",
+          label: "角色",
           name: "role",
         },
         {
           type: "image",
-          label: "Avatar",
+          label: "头像",
           name: "avatar",
         }
       ],

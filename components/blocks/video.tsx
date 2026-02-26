@@ -21,7 +21,7 @@ export const Video = ({ data }: { data: PageBlocksVideo }) => {
 
 export const videoBlockSchema: Template = {
   name: 'video',
-  label: 'Video',
+  label: '视频',
   ui: {
     previewSrc: '/blocks/video.png',
     defaultItem: {
@@ -32,27 +32,29 @@ export const videoBlockSchema: Template = {
     sectionBlockSchemaField as any,
     {
       type: 'string',
-      label: 'Color',
+      label: '颜色',
       name: 'color',
       options: [
-        { label: 'Default', value: 'default' },
-        { label: 'Tint', value: 'tint' },
-        { label: 'Primary', value: 'primary' },
+        { label: '默认', value: 'default' },
+        { label: '浅色', value: 'tint' },
+        { label: '主色', value: 'primary' },
       ],
     },
     {
-      type: 'string',
-      label: 'Url',
+      type: 'image',
+      label: 'URL',
       name: 'url',
+      // @ts-ignore
+      uploadDir: () => 'videos',
     },
     {
       type: 'boolean',
-      label: 'Auto Play',
+      label: '自动播放',
       name: 'autoPlay',
     },
     {
       type: 'boolean',
-      label: 'Loop',
+      label: '循环播放',
       name: 'loop',
     },
   ],

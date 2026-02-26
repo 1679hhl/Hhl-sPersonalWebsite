@@ -60,7 +60,7 @@ export const Callout = ({ data }: { data: PageBlocksCallout }) => {
 
 export const calloutBlockSchema: Template = {
     name: 'callout',
-    label: 'Callout',
+    label: '标注',
     ui: {
         previewSrc: '/blocks/callout.png',
         defaultItem: {
@@ -72,12 +72,12 @@ export const calloutBlockSchema: Template = {
         sectionBlockSchemaField as any,
         {
             type: 'string',
-            label: 'Text',
+            label: '文本',
             name: 'text',
         },
         {
             type: 'string',
-            label: 'Url',
+            label: '链接',
             name: 'url',
         },
     ],

@@ -147,22 +147,22 @@ export const heroBlockSchema: Template = {
     sectionBlockSchemaField as any,
     {
       type: 'string',
-      label: 'Headline',
+      label: '大标题',
       name: 'headline',
     },
     {
       type: 'string',
-      label: 'Tagline',
+      label: '副标题',
       name: 'tagline',
     },
     {
-      label: 'Actions',
+      label: '操作按钮',
       name: 'actions',
       type: 'object',
       list: true,
       ui: {
         defaultItem: {
-          label: 'Action Label',
+          label: '按钮文本',
           type: 'button',
           icon: {
               name: "Tina",
@@ -175,22 +175,22 @@ export const heroBlockSchema: Template = {
       },
       fields: [
         {
-          label: 'Label',
+          label: '文本',
           name: 'label',
           type: 'string',
         },
         {
-          label: 'Type',
+          label: '类型',
           name: 'type',
           type: 'string',
           options: [
-            { label: 'Button', value: 'button' },
-            { label: 'Link', value: 'link' },
+            { label: '按钮', value: 'button' },
+            { label: '链接', value: 'link' },
           ],
         },
         iconSchema as any,
         {
-          label: 'Link',
+          label: '链接',
           name: 'link',
           type: 'string',
         },
@@ -198,24 +198,24 @@ export const heroBlockSchema: Template = {
     },
     {
       type: 'object',
-      label: 'Image',
+      label: '图片',
       name: 'image',
       fields: [
         {
           name: 'src',
-          label: 'Image Source',
+          label: '图片源',
           type: 'image',
         },
         {
           name: 'alt',
-          label: 'Alt Text',
+          label: '替代文本',
           type: 'string',
         },
         {
           name: 'videoUrl',
-          label: 'Video URL',
+          label: '视频 URL',
           type: 'string',
-          description: 'If using a YouTube video, make sure to use the embed version of the video URL',
+          description: '如果使用 YouTube 视频，请确保使用嵌入版本的视频 URL',
         },
       ],
     },

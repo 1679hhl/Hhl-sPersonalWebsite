@@ -82,7 +82,7 @@ const defaultFeature = {
 
 export const featureBlockSchema: Template = {
   name: "features",
-  label: "Features",
+  label: "特性",
   ui: {
     previewSrc: "/blocks/features.png",
     defaultItem: {
@@ -95,17 +95,17 @@ export const featureBlockSchema: Template = {
     sectionBlockSchemaField as any,
     {
       type: "string",
-      label: "Title",
+      label: "标题",
       name: "title",
     },
     {
       type: "string",
-      label: "Description",
+      label: "描述",
       name: "description",
     },
     {
       type: "object",
-      label: "Feature Items",
+      label: "特性项",
       name: "items",
       list: true,
       ui: {
@@ -122,12 +122,12 @@ export const featureBlockSchema: Template = {
         iconSchema as any,
         {
           type: "string",
-          label: "Title",
+          label: "标题",
           name: "title",
         },
         {
           type: "rich-text",
-          label: "Text",
+          label: "文本",
           name: "text",
         },
       ],

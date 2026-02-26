@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { format } from 'date-fns';
+import { zhCN } from 'date-fns/locale';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import { PostConnectionQuery, PostConnectionQueryVariables } from '@/tina/__generated__/types';
 import ErrorBoundary from '@/components/error-boundary';
@@ -23,7 +24,7 @@ export default function PostsClientPage(props: ClientPostProps) {
     const date = new Date(post.date!);
     let formattedDate = '';
     if (!isNaN(date.getTime())) {
-      formattedDate = format(date, 'MMM dd, yyyy');
+      formattedDate = format(date, 'yyyy年MM月dd日', { locale: zhCN });
     }
 
     return {
@@ -35,7 +36,7 @@ export default function PostsClientPage(props: ClientPostProps) {
       excerpt: post.excerpt,
       heroImg: post.heroImg,
       author: {
-        name: post.author?.name || 'Anonymous',
+        name: post.author?.name || '匿名',
         avatar: post.author?.avatar,
       }
     }
@@ -47,10 +48,10 @@ export default function PostsClientPage(props: ClientPostProps) {
         <div className="container flex flex-col items-center gap-16">
           <div className="text-center">
             <h2 className="mx-auto mb-6 text-pretty text-3xl font-semibold md:text-4xl lg:max-w-3xl">
-              Blog Posts
+              博客文章
             </h2>
             <p className="mx-auto max-w-2xl text-muted-foreground md:text-lg">
-              Discover the latest insights and tutorials about modern web development, UI design, and component-driven architecture.
+              探索关于现代 Web 开发、UI 设计和组件驱动架构的最新见解和教程。
             </p>
           </div>
 
@@ -102,7 +103,7 @@ export default function PostsClientPage(props: ClientPostProps) {
                         href={post.url}
                         className="inline-flex items-center font-semibold hover:underline md:text-base"
                       >
-                        <span>Read more</span>
+                        <span>阅读更多</span>
                         <ArrowRight className="ml-2 size-4 transition-transform" />
                       </Link>
                     </div>

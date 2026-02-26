@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import type { Collection } from 'tinacms';
 
 const Post: Collection = {
-  label: 'Blog Posts',
+  label: '博客文章',
   name: 'post',
   path: 'content/posts',
   format: 'mdx',
@@ -16,7 +16,7 @@ const Post: Collection = {
   fields: [
     {
       type: 'string',
-      label: 'Title',
+      label: '标题',
       name: 'title',
       isTitle: true,
       required: true,
@@ -24,13 +24,13 @@ const Post: Collection = {
     {
       type: 'image',
       name: 'heroImg',
-      label: 'Hero Image',
+      label: '封面图片',
       // @ts-ignore
       uploadDir: () => 'posts',
     },
     {
       type: 'rich-text',
-      label: 'Excerpt',
+      label: '摘要',
       name: 'excerpt',
       overrides: {
         toolbar: ['bold', 'italic', 'link'],
@@ -38,7 +38,7 @@ const Post: Collection = {
     },
     {
       type: 'reference',
-      label: 'Author',
+      label: '作者',
       name: 'author',
       collections: ['author'],
       ui: {
@@ -72,7 +72,7 @@ const Post: Collection = {
     },
     {
       type: 'datetime',
-      label: 'Posted Date',
+      label: '发布日期',
       name: 'date',
       ui: {
         dateFormat: 'MMMM DD YYYY',
@@ -81,13 +81,13 @@ const Post: Collection = {
     },
     {
       type: 'object',
-      label: 'Tags',
+      label: '标签',
       name: 'tags',
       list: true,
       fields: [
         {
           type: 'reference',
-          label: 'Tag',
+          label: '标签',
           name: 'tag',
           collections: ['tag'],
           ui: {
@@ -108,16 +108,16 @@ const Post: Collection = {
     },
     {
       type: 'rich-text',
-      label: 'Body',
+      label: '正文',
       name: '_body',
       templates: [
         {
           name: 'BlockQuote',
-          label: 'Block Quote',
+          label: '引用块',
           fields: [
             {
               name: 'children',
-              label: 'Quote',
+              label: '引用内容',
               type: 'rich-text',
               overrides: {
                 toolbar: ['bold', 'italic', 'link'],
@@ -125,19 +125,19 @@ const Post: Collection = {
             },
             {
               name: 'authorName',
-              label: 'Author',
+              label: '作者',
               type: 'string',
             },
           ],
         },
         {
           name: 'DateTime',
-          label: 'Date & Time',
+          label: '日期和时间',
           inline: true,
           fields: [
             {
               name: 'format',
-              label: 'Format',
+              label: '格式',
               type: 'string',
               options: ['utc', 'iso', 'local'],
             },
@@ -145,26 +145,26 @@ const Post: Collection = {
         },
         {
           name: 'NewsletterSignup',
-          label: 'Newsletter Sign Up',
+          label: '通讯注册',
           fields: [
             {
               name: 'children',
-              label: 'CTA',
+              label: '行动号召 (CTA)',
               type: 'rich-text',
             },
             {
               name: 'placeholder',
-              label: 'Placeholder',
+              label: '占位符',
               type: 'string',
             },
             {
               name: 'buttonText',
-              label: 'Button Text',
+              label: '按钮文本',
               type: 'string',
             },
             {
               name: 'disclaimer',
-              label: 'Disclaimer',
+              label: '免责声明',
               type: 'rich-text',
               overrides: {
                 toolbar: ['bold', 'italic', 'link'],
@@ -173,8 +173,8 @@ const Post: Collection = {
           ],
           ui: {
             defaultItem: {
-              placeholder: 'Enter your email',
-              buttonText: 'Notify Me',
+              placeholder: '输入您的邮箱',
+              buttonText: '通知我',
             },
           },
         },

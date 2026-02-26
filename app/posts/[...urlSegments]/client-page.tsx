@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { format } from 'date-fns';
+import { zhCN } from 'date-fns/locale';
 import { tinaField, useTina } from 'tinacms/dist/react';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import { PostQuery } from '@/tina/__generated__/types';
@@ -37,7 +38,7 @@ export default function PostClientPage(props: ClientPostProps) {
   const date = new Date(post.date!);
   let formattedDate = '';
   if (!isNaN(date.getTime())) {
-    formattedDate = format(date, 'MMM dd, yyyy');
+    formattedDate = format(date, 'yyyy年MM月dd日', { locale: zhCN });
   }
 
   const titleColour = titleColorClasses[theme!.color! as keyof typeof titleColorClasses];

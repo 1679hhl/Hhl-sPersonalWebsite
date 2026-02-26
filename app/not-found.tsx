@@ -18,8 +18,8 @@ export function Illustration(props: React.ComponentPropsWithoutRef<"svg">) {
 }
 
 export default function NotFound({
-  title = "Page not found",
-  description = "Lost, this page is. In another system, it may be.",
+  title = "页面未找到",
+  description = "抱歉，您访问的页面不存在或已被移除。",
 }: NotFoundProps) {
   return (
     <div className="relative text-center z-[1] pt-52">
@@ -31,7 +31,7 @@ export default function NotFound({
       </p>
       <div className="mt-10 mx-auto">
         <Button asChild>
-          <Link href="/">Take me home</Link>
+          <Link href="/">返回首页</Link>
         </Button>
       </div>
     </div>

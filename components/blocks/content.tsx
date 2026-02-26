@@ -26,7 +26,7 @@ export const Content = ({ data }: { data: PageBlocksContent }) => {
 
 export const contentBlockSchema: Template = {
   name: 'content',
-  label: 'Content',
+  label: '内容',
   ui: {
     previewSrc: '/blocks/content.png',
     defaultItem: {
@@ -37,7 +37,7 @@ export const contentBlockSchema: Template = {
     sectionBlockSchemaField as any,
     {
       type: 'rich-text',
-      label: 'Body',
+      label: '正文',
       name: 'body',
       templates: [scriptCopyBlockSchema],
     },
